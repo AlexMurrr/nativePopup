@@ -2,8 +2,8 @@ const popup = document.getElementById('popup');
 const btn = document.getElementById('openPopupBtn');
 const container = document.getElementById('center-container');
 
-function noneBtn() {
-   const btn = document.getElementById('openPopupBtn');
+function noneBtnOpenPopup() {  
+   popup.style.display = 'block';
    btn.style.display = 'none';
    console.log('Кнопка исчезла')
   } 
@@ -17,6 +17,7 @@ function openPopup() {
     popup.style.display = 'block';
   }  
   
-  function closePopup() {
+function closePopup() {
     popup.style.display = 'none';
   }
+
