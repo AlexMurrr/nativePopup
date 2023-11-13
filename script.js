@@ -26,8 +26,13 @@ function getValue(){
   const name = document.getElementById('name').value; 
   const patronymic = document.getElementById('patronymic').value; 
   const specialization = document.getElementById('specialization').value; 
-  const experience = document.getElementById('experience').value; 
-  popup.style.display = 'none';
-  console.log(surname, name, patronymic, specialization, experience);
+  const experience = document.getElementById('experience').value;
+  document.getElementById('surnameP').innerHTML=surname;
+  document.getElementById('nameP').innerHTML=name;
+  document.getElementById('patronymicP').innerHTML=patronymic;
+  document.getElementById('specializationP').innerHTML=specialization;
+  document.getElementById('experienceP').innerHTML=experience;
+  popup.style.display = '';
+  
 }  
 
