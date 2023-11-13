@@ -1,6 +1,7 @@
 const popup = document.getElementById('popup');
 const btn = document.getElementById('openPopupBtn');
 const container = document.getElementById('center-container');
+const surname = document.getElementById('surname');
 
 function noneBtnOpenPopup() {  
    popup.style.display = 'block';
@@ -20,4 +21,10 @@ function openPopup() {
 function closePopup() {
     popup.style.display = 'none';
   }
+
+function getValue(){
+  const surname = document.getElementById('surname').value;
+  popup.style.display = 'none';
+  console.log(surname)
+}  
 
