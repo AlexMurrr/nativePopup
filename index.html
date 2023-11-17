@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-
-  <title>Попап</title>
+  <title>попапТест</title>
 </head>
-<body>
-  <div class="center-container" id="center-container">
-    <p id="surnameP"></p>
-    <p id="nameP"></p>
-    <p id="patronymicP"></p>
-    <p id="specializationP"></p>
-    <p id="experienceP"></p>
+<body>  
+<div> 
+  <h4 id="dataInput"></h4>
+  <p id="surnameP"></p>
+  <p id="nameP"></p>
+  <p id="patronymicP"></p>
+  <p id="specializationP"></p>
+  <p id="experienceP"></p>
+  <h4 id="jsonName"></h4>
+  <p id="jsonDate"></p>
+</div>
+  <div class="center-container" id="center-container">      
     <button class="center-button" id="openPopupBtn" onclick="noneBtnOpenPopup()">НАЧАТЬ</button>
     <div class="popup" id="popup">        
         <div class="form-container">
-            <h3>Введите данные</h3>
-           
+            <h3>Введите данные</h3>           
               <div  class="form">
                 <div class="column">                    
                     <div><input type="text" id="surname" name="surname" placeholder="Фамилия"></div>
@@ -30,7 +33,7 @@
                     <div><input type="text" id="specialization" name="specialization" placeholder="Специальность"></div>
                     <div><input type="text" id="experience" name="experience" placeholder="Опыт"></div>
                 </div>
-              </div> <button type="submit" class="formBtn" onclick="getValue()">Отправить</button>               
+              </div> <button type="submit" class="formBtn" onclick=" getValue()">Отправить</button>               
            
         </div>
     </div>
